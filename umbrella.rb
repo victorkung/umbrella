@@ -17,7 +17,9 @@ pirate_weather_api_key = ENV.fetch("PIRATE_WEATHER_KEY")
 # Get User's Location
 puts "Where are you located?"
 puts
-user_location = gets()
+user_location = gets.chomp
+puts
+puts "Checking the weather in " + user_location + "..."
 puts
 
 # Generate URL for Querying Google Maps API 
